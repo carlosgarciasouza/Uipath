@@ -1,0 +1,127 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1208,1556" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="50">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence_NewTask" sap:VirtualizedContainerService.HintSize="476,1491" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="nameAtv" />
+      <Variable x:TypeArguments="x:String" Name="NameAtv" />
+      <Variable x:TypeArguments="x:String" Name="Na" />
+      <Variable x:TypeArguments="x:String" Name="Atv" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="434,238" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Qual Atividade a ser Realizada?" Title="Nova Tarefa">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Atv]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Atividades - Dudu – Planner" sap:VirtualizedContainerService.HintSize="434,1121" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="cc2c746d-43d4-4e62-ba2b-675318c1b332" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer_Atribuir_NewTask" sap:VirtualizedContainerService.HintSize="376,905" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Adicionar tarefa'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cc2c746d-43d4-4e62-ba2b-675318c1b332" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://tasks.office.com/copersucar.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=73d5524c-3e08-418a-aa19-21656f32b32c&amp;planId=Fqhf4HlWQUaBkktjpFbq9GQAGUxi" DesignTimeRectangle="299, 288, 236, 19" ElementType="Text" FriendlyName="'Adicionar tarefa'" FullSelectorArgument="&lt;webctrl aaname='Adicionar tarefa' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Adicionar tarefa' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='SPAN' type='' class='addTaskText' check:innerText='Adicionar tarefa' /&gt;" Guid="b61c6e30-9c94-4b58-b65e-9b7b9b256bbb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPAAAAAXCAYAAAA1FMKoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKSSURBVHhe7ZhLbsIwEIZ7FS7Ta3CDbrhBVmy5ABfokjVXQEgcAsEl3Iwf8Twcx1BVrcv/SZGaMHYm0Xwep28OANAtEBiAjoHAAHQMBAagYyAwAB0DgQHoGAgMQMc8JvDt4Nabdzdc4nmVsxs2H+7zFs5O+3e32p/DSYXWuH9DfKcr9q4AaOUhgUmuYb9rFEwK3Cc//QxX97ltXRABsDwgMBXzzp2aixoCL/Mf3hH4TdoFvuTOS514fbz6vzOhm6z8dpB+P4jivB8/VOeW8avtwd3HqyaO7pti6BBzRAEuaRtKBy0yGT8fG5+7XRx7jPPrXcW0tY1HzC+MK11PuR/ic6lnn8bE/ObmV89r3zMAmWaB/fY5FT8VGSvcJCMvNv8tOytwIX4U3gjsiznPYcdFmaZc4qLA7zMKJQTTImpxBVFy3iHHnOQikN9LEFXGy3vq92DnP42fKNMC5J9fLkgAcNoE9t2CF5IqPPM7IWOMmGIByPC4YqcXY8uCzc0t8yyMNSzH8BylnERYUOQ3Ls3ZmkNLjuCVaRLYF2bc0omjKqQsPl7cttAz+bdS8Y8sSahzoXOR93cFjl2ezTkvMI2XseFIcxbm11vrxRzBK9MgcINIpQ7sr+XiE8Vd6ZI8rtiBad7WDqzvI/J8RmD7LpY7cO0ean7zHltyBK/MssAlOT28mKnQpGz1b+BC/NPfwKrAmbRaKH/+LYFL5zWB47WZxcrMpxcc8/wASBYF9iKqokzI4gzFnLZ+w0UWpy1uGZ9+M3G+iHMcl94KNSIkkPdY73cPduCYD43ni8I0584N1Q4cCIsZO6YYnUNYoHLcOD8EBhXa/okFAPiTQGAAOgYCA9AxEBiAjoHAAHQMBAagW5z7AhJb53mU6i1jAAAAAElFTkSuQmCC" InformativeScreenshot="4295b5bb54a0b2282a253306c9c12239.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Atividades - Dudu – Planner' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="257, 277, 288, 40" ElementType="Button" FriendlyName="'Adicionar tarefa'" FullSelectorArgument="&lt;webctrl aria-role='button' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='button' type='' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='DIV' class='addButton css-104 active_0' aaname='' check:innerText='Adicionar tarefa' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASQAAAAsCAYAAADM3cU1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT2SURBVHhe7Z1JUuNIFIZ1FS7Qx6h134Ab1KaWvWNVWy7ABWrJmisQFcE8FgTBaCYPzOBs/+lMKVOSjV2UZNr9fREvsFKpVEoR7/OTsK2k2+2at7e3NF5eXgrx/PxMEATxoShzS+geuSgJRaSNnp6ezOPjo3l4eEjj/v6eIAjiQxE6RY6Ra7yovIeSUER6LUsBAFSNXCPnhGKyQpKx9BcAoG5CByUqne7u7qiMAGAiyD1ykFyUyEytVsutAgCoHzlILkp0s+n29tY1AwDUjxwkFyWdTsdcX1+7ZgCA+pGD5KKk3W4jJACYKHKQXGSFdHV15ZoBAOpHDrJC0s2ky8tL1wwAUD9ykFyUNJtN02g0XDMAQP3IQXJRorvbFxcXrhkAoH7kILkIIQHAxEmFdHNzY87Pz11ztfz1z9/uFQBAhhwkF1khnZ2dueZqmfn2xb0CAMiQg6yQ9P9/hAQAk0QOkouskE5PT11ztSAkAChDDrJC0geSpk5I54tmtrevuRW3PJSfZu7bV/PD3UZbXvhiZhZ+9heGMGq/qcGd05ngXAH8KeQgucgK6eTkxDVXS11CkizmFuZHFEYspP8mVR/DqfnxfVTBA4yPHDSlQlJyzpvlkZMUIb3PNJwj+MxUJiT9a1/iGTf+2EcCVrLKSJXS7FL+crT/bu/3O7u0GCXbxdLXXGUV95/5vmj0qa1CP+3X91FEY7iEXvGXPQpJM8OOF2yfVSNu2yU3fr7qSy+lXLj59bcra/dzX3THlTv2dBs3v0Hj5463eJ4BRicVkr5DMk0Vkr1c88mspAkS0cslTB57L2igkEr69wRWEJJNzmyM4nZODulcnOTC/fQEEQkjL5a8iCKctMIKpjenWGrZeemLJ+4f7zN/HorjL/cuiVOh2uOPBQswDnKQXDRdQrLv5mFi5BKpsF7EfQqiiYSWEfYrrcSibcuFMWjseJ4l2xZ4v084x1g2oi/I+B6Rxhx1DqPMEWAwkZCOj49dc7VULSSbaKom8jFUMHEyhclaTNyMbF1ZMvd4Tyr5uWg5mvdHheSqsGDMwULS9nHffvgxS8bPX8q9O0eAwchBUyakEcRQViHZtiyZomQdUsWE/UorJI07aoWU3080z98RUvFcvF8hDdtHbvzCeRxljgCDmT4hlcnGEianEieWx/B7SCX9f/seUi5hAwnlBWGXPySksuVhQnJtA+RbGC8v0MLxA4zH1AnJiiWXZJ442frJ6S815lbiZCsma9zfryv0s0mZ9QslVhREjyip433MLsyPWSG5+Wj7UHLpmPNmbmiF1Kcv5yDSPvk59IWb9euNj5DgA0xESHzbHwDKmIiQAADKQEgA8GlASADwaUBIAPBpiIRU1ye1AQDKmMhXRwAAykiFVOfPjwAAlCEHVfLzIwAA44KQAODTEAmprt/UBgAoI/1Nbf/UkW6361YBANSH3CMH2aeO+CfXdjodtxoAoD7knvTJtc1m0zQaDfugtna7bV5fX103AIDqkGvkHLlHDpKLklarZUslNR4dHZnDw0Ozt7dndnZ2zPb2ttna2jKbm5tmY2PDrK+v21hbW7OxurpKEAQRhfeD94XcIYfIJXKK3CLHyDVyjn9qrVyUqFySmXRDSWWT7nZ7MR0cHNj49euX2d/ft6GBdnd3o9AOCIL4f0feC3KF94Yc4n3iRSTXyDlyjxzU6XTMvxuVYrM/pG77AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'INPUT TextField63'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cc2c746d-43d4-4e62-ba2b-675318c1b332" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://tasks.office.com/copersucar.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=73d5524c-3e08-418a-aa19-21656f32b32c&amp;planId=Fqhf4HlWQUaBkktjpFbq9GQAGUxi" DesignTimeRectangle="303, 403, 228, 32" ElementType="InputBox" FriendlyName="'INPUT TextField63'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-168' aaname='' /&gt;" Guid="324b11fc-8c2c-46d6-885c-993b38a4d0d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOgAAAAkCAYAAACDg3a3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPoSURBVHhe7ZhNThtBEIVzlRwlWeQUCJFcIRIrxDbZeG/5EKzsfTZeIUs5AIIzBCKzo9N/1a7qrm57wIzbznvSJxh3Tf9U1RsPfDAQBHUrGBSCOlYy6MvLi3l+Xpu/T4/m6fEPAGBknPecB50XScmgz+u1ehMAYFycF0nJoFogAOAwkGBQADqEBIMC0CEkGBSADiHBoAB0CAkGBaBDSDAoAB1CgkEB6BASDApAh5BgUAA6hPQmgy5nZ+Zyca+O7crd4spcXM/NnTIGwKtZTc3F+ZllapbaeOeQDm5Q8P/hH8qzW3VsP9yayfmVuXnQxo4DEgwKRufdDfowN5dH+s1JkPZo0PjUWrnkuFeL8vXCxYfPLfRa615F0ivuvbm5PjOTRZwjfu4Lmua046vNnAKlMLIZyj2G/bvPaf5GYeNel3w/eaOlVytt/DXr87HWAzHmbhV+UrzMlZyL/2kR8jSP99K3Tz2+ZLdY0QMW2l+9xnpPVPOi5l/m5Bhee0l7Nqg9fEpgTAo1qDCiLcjqNvyuGFQW135mGyfd5wopxhk7GZTN7+N5wcL6VRPE4qfxeH9qJj/OX63y+YauH+I3zequ+fycmDs+7udn13Z/cq7cINncjfiCAbGyJo5WjeO5RM235CXvA3s9STnNc9wnpP1/g2YFTon1zas8uXhMTF61CRx58reMlQbleyyLVTYPQ+w1wHMg86HdM3B9ZT03Xqzh0XOn7kkZa5470porpxW7dS1RR+Vc2/LS6hHLLmc9NKTxDErX9sknntQipmLQdB+xL4OGM/D1msVTGmOTg8rexZ6Gre9/F+eOqPvT13dzbGoUYvhcNKafux5fsnusula1xuW5tuZF6QOXZzW2U0jjGpTwCYyx2wyaz9F6Oh7UoHk+Im5P6Z6B67v1dm4kJXeWzZ7Kcb7f8tzteMmQWGWtZo0rPdHKS9YH+V6aNe4E0mgGvVtM2RiLFcUpi5En01/XDOrnZff7QvGn5fsa1I+L+cN5Wjlqr5+dp0lYS+zP74dyla8d5qa9ledux0uGxFZqml+3DBrnr+alafCYp1qNO4E08t+g8fWCJ1c0fb0YdN/lbFp8Swr4OnZe/x9X0fBDDJIh9hqQOYgxfL+iSV+xPj1kElmOEzF39N9OJTY0Po1NzYTtXTt3Kz5nSCyvaTh7q8ZaT1haecm+QWVNruzeyrP2BulNBgU9UWlkcJSQYNCTAQY9JUgw6MkAg54SJBgUgA4hwaAAdAgJBgWgQ0gwKAAdQoJBAegQUjLopx9fzcfvXwAAB8Z5kZQMOv/9y3z++U29AQAwDs6DzoukZFAIgvoTDApB3cqYf2+/Yt72gTgWAAAAAElFTkSuQmCC" InformativeScreenshot="0dc4f1872a53aff254376ccda0e5ee26.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Atividades - Dudu – Planner' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,223" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[Atv]" Version="V1" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'Adicionar tarefa'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cc2c746d-43d4-4e62-ba2b-675318c1b332" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://tasks.office.com/copersucar.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=73d5524c-3e08-418a-aa19-21656f32b32c&amp;planId=Fqhf4HlWQUaBkktjpFbq9GQAGUxi" DesignTimeRectangle="257, 482, 288, 44" ElementType="Button" FriendlyName="'Adicionar tarefa'" FullSelectorArgument="&lt;webctrl aaname='Adicionar tarefa' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Adicionar tarefa' parentid='eVf7_LlWHU68zRXxKql6hmQANEbE' tag='BUTTON' type='' class='addTaskButton css-164' check:innerText='Adicionar tarefa' /&gt;" Guid="b73ca916-ee9c-4639-89ea-97daa4a4fc73" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASQAAAAwCAYAAAC4yQfVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASHSURBVHhe7dpNTiNHGIBhXykHyCKXyDaLXCBKrpBFEpQzzC6TLcvZ8C/+DINBIISNGwtsgzCSJYQ0O774q+5qd1WXsTXE7Rp4S3oWtqvLbUv1ThlN7fb2VjqdjjAYDMaihjZIW+QE6fn5GQAqpcMJ0tXVlXz3+48AsBDaIBOkfr8vSZIEJwFAFbRB2iITpHa7HZwEAFXQBpkg9Xo9uby8DE4CgCpog7RFtW63K61WKzgJAKqgDdIWmSA1m83gJACogjYoD9LFxUVwEgBUQRtkgnRzc0OQACyUNkhbRJAALBxBAhANggQgGgQJQDQIEoBoECQA0SBIAKJBkABEgyABiAZBitWnU3kUkaQReK1kVRJ5kvqn9PHyYHThYNWb49NrZl3/jci+Uyl8V4gLQYqURiUZdGcIi3KD9G2a92f4IPUv7yzA3yCCFCXdnF1ZnnmTEqTp3sJ39PYRpBg1xicjPSk9dj54c9J/7e147Jw6m22p8+SdrNz58uVUlkInBn3f4nDWyDZ0w/7s0aHRtK977+G8ll3bydb3T335T6lsmPuz1xVG/rz9jKfZe3qfPR/ZPUxa3/u85e8ZVSNIETI/12wodNMUNqLd+MXNY/5mNDFIgfmjgJWCZDbneI3ydVkc8nvJAmTfZ7Tpk3zuhGv9EDmyaBVPMKN7GgczXcM+TsPjzjfPlaJl37O8/vLoJ3EeTfP5ixHFIhCk2Jh/zQOnC7uRSq+X5zgbsRQ0yw1S8CTmXBsORnjt6TEomz6neI/u+soLrKFr2u9q2vqz3CPmjSBFxmy00HgxMO5mKm7W8sa1ihs4tJlHnPgFNqx3L+lJrTBeHaT0vopjcpD0+tCwawbW93/KTb1HzBtBisoMYQidkMxz483kbNbXnJB03RlPSP71bjC+Jkjl72L6Ceml9/DWL32Ps9wj5o0gxSQUG6O4OXXjuJs/PZmMN1M5Bt78r/4bkrdh8yD58Ugfvy5IoccvBSl7Lhhf5a3nh7r0+bEIBCkiJizeJrPczZZuTjuShrvZypvVnZ++5kdkxGzK8ShGrByIbL69J+faJ0kGfhSnb3Zz3zqyNfPHZnRHa74cJJXGuTAm3kMWTTsGo/VnuEfMF0ECEA2CBCAaBAlANAgSgGgQJADRIEgAokGQAESDIAGIBkECEA2CBCAaeZC63S5BArBQ2iBtkQlSs9kMTgKAKmiDCBKAKORB6vV60mq1gpMAoAraIG1Rrd/vmwffL/0UnAgA86Tt0QZpi2p3d3eSJIn88s8fwckAME/aHm2Qtqg2GAzk+vpa9k8+y2///iU//P1z8CIA+D9pa379+KdpjzZIW1R7eHgwv93a7bacn5/L8fGx1Ot12dnZke3tbdna2pLNzU1jY2ND1tfXZW1tzVhdXc2trKwAeKeKLbB90FZoM2w/tCXaFG2LNkZbo83R9miDtEW14XAo9/f35gk9Nun/Bzg7O5OTkxNpNBpydHQkh4eHcnBwYOhC+/v7sre359jd3QXwTvk90EZoK2w3tCHaEm2KtkUbo63R5mh7tEHD4VD+AwbNea5TkHt6AAAAAElFTkSuQmCC" InformativeScreenshot="1382e24e91dafdfef96e80625b169a3b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Atividades - Dudu – Planner' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1358, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABhSURBVDhPY6AKEKhxFADi90D8H4YVF6ehYOMjjcj4PVQrBEANgGsmwoD/UK0IMPgMQMdDwACJGPP/yJjWBqCmAxAgZABUGW5AawMwnYwO0A2AChMPgJreIxlA2EbqAAYGAKdtFx4O6cWWAAAAAElFTkSuQmCC" InformativeScreenshot="9362e7be452003a9a84dd974db1f8ef3.png" Selector="&lt;html app='chrome.exe' title='Atividades - Dudu – Planner' /&gt;" Url="https://tasks.office.com/copersucar.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=73d5524c-3e08-418a-aa19-21656f32b32c&amp;planId=Fqhf4HlWQUaBkktjpFbq9GQAGUxi" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
